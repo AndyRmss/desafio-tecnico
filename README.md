@@ -46,3 +46,4 @@ Para parar os containers, execute o comando:
    ```bash
    docker-compose down
    ```
+   .
