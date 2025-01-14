@@ -1,0 +1,6 @@
+frontend_image = "nginx:latest"
+db_image       = "postgres:15"
+backend_image  = "your_backend_image"
+postgres_password = "newpassword"
+postgres_user = "newuser"
+postgres_db   = "newdb"

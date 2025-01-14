@@ -1,3 +1,24 @@
-# Desafio técnico - Cubos DevOps
+# Desafio Técnico - Cubos DevOps
 
-Este é um documento com os materiais que serão disponibilizado para o desafio técnico.
+## Dependências
+- Docker
+- Docker Compose
+- Terraform
+
+## Inicialização
+
+1. **Build e inicialização dos containers**:
+   ```bash
+   docker-compose up --build
+   ```
+
+2. **Para rodar o Terraform (caso esteja configurado para orquestrar containers)**:
+   ```bash
+   terraform init
+   terraform apply
+   ```
+
+3. **Parar os containers**:
+   ```bash
+   docker-compose down
+   ```
