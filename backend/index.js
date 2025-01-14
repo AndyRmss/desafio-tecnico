@@ -1,10 +1,15 @@
 import http from 'http';
 import PG from 'pg';
+import dotenv from 'dotenv';
 
-const port = Number(process.env.port);
+dotenv.config();
+
+const port = Number(process.env.port || 3001);
+
+const { DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_NAME } = process.env;
 
 const client = new PG.Client(
-  `postgres://${user}:${pass}@${host}:${db_port}`
+  `postgres://${DB_USER}:${DB_PASS}@${DB_HOST}:${DB_PORT}/${DB_NAME}` 
 );
 
 let successfulConnection = false;
